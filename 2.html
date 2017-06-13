@@ -1,0 +1,38 @@
+<!-- is palindrome string -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+	function palindrome1()
+	{
+	
+	var n,n1,s,d;
+	n = document.getElementById("num").value;
+	n1=n;
+	s=0;
+	while(n!=0)
+	{
+	d=n%10;
+	n=(n-d)/10;
+	s=(10*s)+d;
+	}
+	if(s==n1)
+	document.getElementById("result").innerHTML = (n1) + " is a palindrome";
+	else
+	document.getElementById("result").innerHTML = (n1) + " is not a palindrome";
+	}
+	
+</script>
+
+</head>
+
+<body>
+<h1> Check for palindrome </h1>
+Enter a number <input id="num"> <br/> 
+<button onclick= "palindrome1()"> Check </button>
+<p id="result"> </p>
+</body>
+</html>

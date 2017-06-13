@@ -1,0 +1,29 @@
+<!-- Q3  Area of circle -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+	function circle_area()
+	{
+	
+	var r,s;
+	r = document.getElementById("num").value;
+	s = Math.PI * r * r;
+	
+	document.getElementById("result").innerHTML = "Area is " + (s);
+	}
+	
+</script>
+
+</head>
+
+<body>
+<h1>AREA OF CIRCLE </h1>
+Enter the radius of circle <input id="num"> <br/> 
+<button onclick= "circle_area()"> Calculate </button>
+<p id="result"> </p>
+</body>
+</html>

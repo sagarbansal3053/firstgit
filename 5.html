@@ -1,0 +1,84 @@
+<!-- Q5  Create a list of objects of Employee with info as follow :
+		->Name, age, salary ,DOB
+		->filter all employees with salary greater than 5000
+		->group employee on the basis of their age
+		->fetch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head><title>JavaScript</title>
+
+</head>
+
+<body>
+<p> Employees with Salary greater than 5000 
+<br><br>
+Name&nbsp;&nbsp;&nbsp;&nbsp;Age&nbsp;&nbsp;&nbsp;&nbsp;Salary  
+</p>
+<p id="first"> </p>
+<br><br>
+<hr>
+<p>Employees grouped on basis of there age.</p>
+<br><br>
+Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Age
+<p id="second"> </p>
+<br><br>
+<hr>
+<p>Employees salary less than 1000 and age greater than 20. There salary incremented 5 times.</p>
+<br><br>
+Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Age&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Incremented Salary(5 times)
+<p id="third"> </p>
+
+<script>
+	var employee = [
+	{ Name : "Sagar" , Age : 24 , Salary : 3000, DOB : '28/03/1993' },
+	{ Name : "Saurav", Age : 25 , Salary : 5500, DOB : '05/05/1992'},
+	{ Name : "Pankaj", Age : 24 , Salary : 6000, DOB : '16/12/1993'},
+	{ Name : "Raghav", Age : 23 , Salary : 800 , DOB : '02/05/1994'},
+	{ Name : "Mansi" , Age : 22 , Salary : 500 , DOB : '20/10/1995'}
+];
+
+
+<!-- employee with salary greater than 5000 -->
+for (var i=0 ; i < employee.length ; i++)
+{
+	if(employee[i].Salary > 5000)
+	document.getElementById("first").innerHTML += employee[i].Name + "&nbsp;&nbsp;&nbsp;&nbsp;" + employee[i].Age + "&nbsp;&nbsp;&nbsp;&nbsp;" + employee[i].Salary + "<br>";	
+}
+
+<!-- employees salary < 1000 && age > 20. Salary incremented 5 times -->
+
+for (var i=0 ; i < employee.length ; i++)
+{
+	if(employee[i].Salary < 1000 && employee[i].Age > 20)
+	document.getElementById("third").innerHTML += employee[i].Name + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + employee[i].Age + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + employee[i].Salary + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + employee[i].Salary * 5 + "<br>";	
+}
+
+
+
+<!-- employees grouped on basis of there age -->
+var groups = {};
+for (var i = 0; i < employee.length; i++) {
+var empAge = employee[i].Age;
+if (!groups[empAge]) {
+    groups[empAge] = [];
+  }
+ groups[empAge].push(employee[i].Name);
+}
+employee = [];
+for (var empAge in groups) {
+  employee.push({ Age: empAge, Name: groups[empAge]});
+}
+
+for (var i=0 ; i < employee.length ; i++)
+{
+	document.getElementById("second").innerHTML += employee[i].Name + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + employee[i].Age + "<br>";	
+}
+
+
+
+</script>
+</body>
+</html>

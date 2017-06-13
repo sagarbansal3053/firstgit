@@ -1,0 +1,28 @@
+<!-- Q4  Copy information of one object to another and log it to console. -->
+
+<!DOCTYPE html>
+<html>
+
+<head><title>JavaScript</title>
+ <meta charset="UTF-8">
+</head>
+
+<body>
+<script>
+var ob1 = {
+firstName : "sagar" ,
+lastName : "bansal" ,
+age : 24
+}
+
+console.log(ob1);
+
+var ob2 = {} ;
+for ( var i in ob1 )
+ {ob2[i]=ob1[i] ;
+ }
+
+console.log(ob2);
+</script>
+</body>
+</html>

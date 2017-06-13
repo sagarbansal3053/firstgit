@@ -1,0 +1,31 @@
+<!-- Q1  Prompt for amount, interest rate and no. of years and calculate simple interest. -->
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Simple Interest Calculation</title>
+
+        <script>
+            function calculate()
+            {
+                a = document.getElementById("a").value;
+                r = document.getElementById("r").value;
+                y = document.getElementById("y").value;
+                result = document.getElementById("result");
+                
+                result.innerHTML = "The interest is " + (a*r*y/100);
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Simple Interest Calculation</h1>
+
+        Amount: <input id="a"><br/>
+        Rate:   <input id="r"><br/>
+        No. of Years: <input id="y"><br/>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="result"></p>
+    </body>
+</html>
