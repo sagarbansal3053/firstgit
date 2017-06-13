@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<link rel="stylesheet" type="text/css" href="q12.css">
+</head>
+<body>
+<div class="main">
+<header>
+	<h1>&nbsp;&nbsp;TO THE NEW</h1>
+	<ul class="ulstyle">
+		<li><a href="#">Quick help</a></li>
+		<li><a href="#">Home</a></li>
+	</ul>
+</header>
+<hr/>
+<div class="form">
+<div class="heading">
+	<h2>Bug Report</h2>
+</div>
+<div class="container">
+<form>
+	
+	<label>Title:*</label><br/>
+	<input type="textbox" name="title"/><br/>
+	
+	<label>Description:*</label><br/>
+	<textarea></textarea><br/>
+	
+	<label>Operating System:</label><br/>
+	<select>
+	  <option value="xp">MicrosoftXP</option>
+	  <option value="ubuntu">Ubuntu</option>
+	</select></br>
+	
+	<label>Product:*</label><br/>
+	<select>
+	  <option value="formoid">Formoid</option>
+	</select>
+	<br/>
+	
+	<label>Version:*</label><br/>
+	<input type="textbox" name="ver"/><br/>
+
+	<label>License:*</label></br>
+	<ul class="licenceul">
+	<li><input type="radio" name="license" value="Free">Free</br></li>
+	<li><input type="radio" name="license" value="Business">Business</li>
+  	</ul>
+	<br/>
+	
+	<label>Severity:</label><br/>
+	<select>
+	  <option value="critical">Critical</option>
+	  <option value="normal">Normal</option>
+	</select></br>
+	
+	<label class="fileContainer">Attachments:
+	</label><br/>
+	<input type="file"/>
+	<br/>
+</div>
+<div class="formfooter">
+	<div class="submit">
+	<input type="submit" name="Send">
+	</div>
+</div>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>

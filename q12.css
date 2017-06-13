@@ -1,0 +1,120 @@
+body{
+	width: 100%;
+	height: 100;
+	margin: 0;
+}
+header{
+	overflow: hidden;
+}
+
+
+
+ul  li{
+	float: right;
+	margin: 13px;
+}
+h1 {
+    font-family: sans-serif;
+    color: rgb(0, 162, 147);
+    font-variant: normal;
+    font-stretch: extra-condensed;
+    float: left;
+}
+.ulstyle {
+    float: right;
+    width: 50%;
+    list-style-type: none;
+}
+a{
+	text-decoration: none;
+	 color: rgb(0, 162, 147);
+}
+.form {
+    border: 1px solid #cecbcb;
+    width: 35%;
+    border-radius: 2%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.heading {
+    border-bottom: 20px solid #cecbcb;
+    padding: 2px;
+    background: #cecbcb;
+    border-radius: 5%;
+}
+h2 {
+    width: 80%;
+    margin-left: 10%;
+    font-family: monospace;
+    font-size: xx-large;
+    color: #fff;
+}
+form {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+label {
+    font-size: smaller;
+    color: #756e6f;
+}
+
+select {
+    background: rgb(13, 150, 137);
+    color: #fff;
+    font-size: x-small;
+    width: 100%;
+    border-radius: 6px;
+}
+.licenceul {
+    list-style-type: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+ul.licenceul li{
+	float: left;
+	margin: 13px;
+}
+ul.licenceul li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-right: 115px;
+    font-size: smaller;
+    color: #666060;
+}
+input[type="file"] {
+    border: 1px solid #cecbcb;
+    border-radius: 2px;
+    width: 100%;
+    margin: 0;
+    color: rgb(169, 169, 169);
+}
+
+input[type="submit"] {
+    float: right;
+    border-radius: 8px;
+    font-family: serif;
+    font-size: normal;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(13, 155, 137);
+}
+input[type="textbox"] {
+    width: 100%;
+    border: 4px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #ccc7c7;
+}
+textarea {
+    width: 100%;
+    border-radius: 6px;
+    border: 4px solid;
+    border-color: #ccc7c7;
+}
