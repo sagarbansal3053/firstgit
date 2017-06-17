@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("p").click(function(event) {
+                event.stopPropagation();
+                alert("The p element was clicked.");
+            });
+            $("div").click(function() {
+                alert("The div element was clicked.");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div>
+        This is a div element.
+        <p>This is a p element, in the div element. <br>
+        </p>
+    </div>
+
+</body>
+
+</html>

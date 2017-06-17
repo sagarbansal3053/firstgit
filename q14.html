@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.cell').each(function() {
+                if ($(this).text() > 10)
+                    $(this).css('color', 'red');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <table border="1px">
+        <tr>
+            <td class="cell">20</td>
+        </tr>
+        <tr>
+            <td class="cell">9</td>
+        </tr>
+        <tr>
+            <td class="cell">5</td>
+        </tr>
+        <tr>
+            <td class="cell">50</td>
+        </tr>
+    </table>
+</body>
+
+</html>

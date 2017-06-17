@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td><a href="#" class="delete">&#x2717;</a></td>
+                <td><a href="#" class="delete">&#x2717;</a></td>
+                <td><a href="#" class="delete">&#x2717;</a></td>
+                <td><a href="#" class="delete">&#x2717;</a></td>
+                <td><a href="#" class="delete">&#x2717;</a></td>
+                <td><a href="#" class="delete">&#x2717;</a></td>
+            </tr>
+            <tr>
+                <td>ROW 1</td>
+                <td>ROW 1</td>
+                <td>ROW 1</td>
+                <td>ROW 1</td>
+                <td>ROW 1</td>
+                <td>ROW 1</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    $("a.delete").click(function() {
+        var colnum = $(this).closest("td").prevAll("td").length;
+
+        $(this).closest("table").find("tr").find("td:eq(" + colnum + ")").remove();
+    });
+</script>
+
+</html>

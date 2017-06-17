@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <button id="add"> Click</button>
+</body>
+<script>
+    $(function() {
+        $('#add').click(function() {
+            var but = $('<button>ADD</button>').attr({
+                id: "abc"
+            });
+            $('#add').after(but);
+        });
+
+        var e1 = $("<p>this is new</p>");
+        $(document).on("click", "button#abc", function() {
+            $('body').append(e1);
+        });
+    });
+</script>
+
+</html>
